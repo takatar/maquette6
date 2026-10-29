@@ -1,0 +1,23 @@
+# Dépendances
+node_modules/
+
+# Artefacts de build (générés par `npm run build`)
+out/
+.ssr-temp/
+*.tsbuildinfo
+
+# Variables d'environnement
+.env
+.env.*
+!.env.example
+
+# Système / éditeurs
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log*

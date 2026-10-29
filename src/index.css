@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --mondrian-white: #F7F6F2;
+    --mondrian-black: #151515;
+    --mondrian-red: #D92727;
+    --mondrian-blue: #1746A2;
+    --mondrian-yellow: #F2C230;
+    --mondrian-gray: #E7E5DF;
+    --font-serif: 'DM Serif Display', Georgia, serif;
+    --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  html {
+    font-family: var(--font-sans);
+    background-color: var(--mondrian-white);
+    color: var(--mondrian-black);
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+
+  h1, h2, h3, .font-serif-display {
+    font-family: var(--font-serif);
+  }
+}
+
+/* Utilitaires graphiques Mondrian */
+.mondrian-border {
+  border-color: #151515;
+}
+
+.mondrian-shadow {
+  box-shadow: 6px 6px 0px 0px #151515;
+}
+
+.mondrian-shadow-sm {
+  box-shadow: 4px 4px 0px 0px #151515;
+}
+
+.mondrian-shadow-red {
+  box-shadow: 6px 6px 0px 0px #D92727;
+}
+
+.mondrian-shadow-blue {
+  box-shadow: 6px 6px 0px 0px #1746A2;
+}
+
+.mondrian-shadow-yellow {
+  box-shadow: 6px 6px 0px 0px #F2C230;
+}
+
+/* Focus visible accessible */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 3px solid #1746A2;
+  outline-offset: 2px;
+}

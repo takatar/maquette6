@@ -1,0 +1,18 @@
+# Contexte de build Docker allégé
+node_modules
+out
+.ssr-temp
+.git
+.gitignore
+.dockerignore
+Dockerfile
+*.log
+npm-debug.log*
+*.tsbuildinfo
+.env
+.env.*
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+README.md
